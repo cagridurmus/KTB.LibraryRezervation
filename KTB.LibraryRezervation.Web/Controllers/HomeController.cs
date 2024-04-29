@@ -50,11 +50,11 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Register([FromBody] RegisterUserDto user)
+    public async Task<IActionResult> Register(RegisterUserDto user)
     {
         var result = await _userService.CreateUserAsync(user);
         //var x = await _service.AddAsync(library);
-        return View();
+        return View("Login");
     }
 
     public IActionResult Privacy()
