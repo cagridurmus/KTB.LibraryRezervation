@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTB.LibraryRezervation.Core", "KTB.LibraryRezervation.Core\KTB.LibraryRezervation.Core.csproj", "{036EADB1-D955-4EC3-8C54-BEFBDD1F59D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTB.LibraryRezervation.Repositories", "KTB.LibraryRezervation.Repositories\KTB.LibraryRezervation.Repositories.csproj", "{18947936-6C21-4569-BDA5-C6DC630F6523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTB.LibraryRezervation.Services", "KTB.LibraryRezervation.Services\KTB.LibraryRezervation.Services.csproj", "{58E12CDB-5D43-4849-B6C0-67861260913C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTB.LibraryRezervation.Web", "KTB.LibraryRezervation.Web\KTB.LibraryRezervation.Web.csproj", "{75B5C0E2-E838-44EA-9A70-874920B94B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTB.LibraryRezervation.API", "KTB.LibraryRezervation.API\KTB.LibraryRezervation.API.csproj", "{DC201D10-192C-415E-A173-25FA6E1F3601}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{036EADB1-D955-4EC3-8C54-BEFBDD1F59D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036EADB1-D955-4EC3-8C54-BEFBDD1F59D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036EADB1-D955-4EC3-8C54-BEFBDD1F59D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036EADB1-D955-4EC3-8C54-BEFBDD1F59D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18947936-6C21-4569-BDA5-C6DC630F6523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18947936-6C21-4569-BDA5-C6DC630F6523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18947936-6C21-4569-BDA5-C6DC630F6523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18947936-6C21-4569-BDA5-C6DC630F6523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E12CDB-5D43-4849-B6C0-67861260913C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E12CDB-5D43-4849-B6C0-67861260913C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E12CDB-5D43-4849-B6C0-67861260913C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E12CDB-5D43-4849-B6C0-67861260913C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75B5C0E2-E838-44EA-9A70-874920B94B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B5C0E2-E838-44EA-9A70-874920B94B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B5C0E2-E838-44EA-9A70-874920B94B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B5C0E2-E838-44EA-9A70-874920B94B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC201D10-192C-415E-A173-25FA6E1F3601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC201D10-192C-415E-A173-25FA6E1F3601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC201D10-192C-415E-A173-25FA6E1F3601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC201D10-192C-415E-A173-25FA6E1F3601}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D31C39BA-BBF1-45BD-8192-C3BA1B3AFEB9}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+	EndGlobalSection
+EndGlobal

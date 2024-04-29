@@ -1,0 +1,17 @@
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/bin/Debug/net8.0/KTB.LibraryRezervation.Services.deps.json
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/bin/Debug/net8.0/KTB.LibraryRezervation.Services.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/bin/Debug/net8.0/KTB.LibraryRezervation.Services.pdb
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/bin/Debug/net8.0/KTB.LibraryRezervation.Core.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/bin/Debug/net8.0/KTB.LibraryRezervation.Repositories.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/bin/Debug/net8.0/KTB.LibraryRezervation.Repositories.pdb
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/bin/Debug/net8.0/KTB.LibraryRezervation.Core.pdb
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/KTB.LibraryRezervation.Services.csproj.AssemblyReference.cache
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/KTB.LibraryRezervation.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/KTB.LibraryRezervation.Services.AssemblyInfoInputs.cache
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/KTB.LibraryRezervation.Services.AssemblyInfo.cs
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/KTB.LibraryRezervation.Services.csproj.CoreCompileInputs.cache
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/KTB.Libr.A44B3FE1.Up2Date
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/KTB.LibraryRezervation.Services.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/refint/KTB.LibraryRezervation.Services.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/KTB.LibraryRezervation.Services.pdb
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/Debug/net8.0/ref/KTB.LibraryRezervation.Services.dll

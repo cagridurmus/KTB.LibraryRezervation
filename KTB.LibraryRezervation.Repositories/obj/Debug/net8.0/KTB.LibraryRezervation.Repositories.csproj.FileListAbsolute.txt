@@ -1,0 +1,17 @@
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/bin/Debug/net8.0/KTB.LibraryRezervation.Repositories.deps.json
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/bin/Debug/net8.0/KTB.LibraryRezervation.Repositories.runtimeconfig.json
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/bin/Debug/net8.0/KTB.LibraryRezervation.Repositories.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/bin/Debug/net8.0/KTB.LibraryRezervation.Repositories.pdb
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/bin/Debug/net8.0/KTB.LibraryRezervation.Core.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/bin/Debug/net8.0/KTB.LibraryRezervation.Core.pdb
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.LibraryRezervation.Repositories.csproj.AssemblyReference.cache
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.LibraryRezervation.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.LibraryRezervation.Repositories.AssemblyInfoInputs.cache
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.LibraryRezervation.Repositories.AssemblyInfo.cs
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.LibraryRezervation.Repositories.csproj.CoreCompileInputs.cache
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.Libr.27552C8D.Up2Date
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.LibraryRezervation.Repositories.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/refint/KTB.LibraryRezervation.Repositories.dll
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.LibraryRezervation.Repositories.pdb
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/KTB.LibraryRezervation.Repositories.genruntimeconfig.cache
+/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/Debug/net8.0/ref/KTB.LibraryRezervation.Repositories.dll

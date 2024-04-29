@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DTMwDqHCsKNWw+nBmub0cfj26MhTa8Bpy+vfcCXLGJg=",
+  "Source": "KTB.LibraryRezervation.API",
+  "BasePath": "_content/KTB.LibraryRezervation.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

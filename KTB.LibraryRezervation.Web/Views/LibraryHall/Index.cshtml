@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Kütüphaneler";
+    Layout = "_Layout";
+}
+
+@model IEnumerable<GetLibraryHallDto>
+<table class="table table-bordered table-responsive table-hover">
+    <thead>
+        <tr>
+            <th> Salon İsmi <span class="icon-arrow">&UpArrow;</span></th>
+            <th> Masa Sayısı <span class="icon-arrow">&UpArrow;</span></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr onclick="location.href='@Url.Action("Index","Desk", new { hallId = item.Id })'">
+                <td> @item.Name </td>
+                <td> @item.DeskCapacity</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section Scripts{
+    <script>
+        var email = localStorage.getItem("email");
+        if ((email == null || email == '') && "@Html.Raw(TempData["email"])" != email) {
+            localStorage.setItem("email", "@Html.Raw(TempData["email"])");
+        }
+
+    </script>
+}
+

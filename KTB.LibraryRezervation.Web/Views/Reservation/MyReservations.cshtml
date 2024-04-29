@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model IEnumerable<GetReservationDto>
+
+<table class="table table-bordered table-responsive table-hover">
+    <thead>
+        <tr>
+            <th> Rezaryon Yapılan Koltuk Numarası </th>
+            <th> Başlangıç Zamanı</th>
+            <th> Bitiş Zamanı</th>
+            <th> Aktiflik</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td> @item.SeatId </td>
+                <td> @item.StartTime</td>
+                <td> @item.EndTime</td>
+                <td> @(item.isActive ? "Aktif" : "Pasif") </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

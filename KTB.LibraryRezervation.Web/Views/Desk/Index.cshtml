@@ -1,0 +1,74 @@
+﻿@{
+    Layout = "_Layout";
+
+}
+@model List<GetDeskDto>
+@*<div class="tarih-secimi">
+        <label for="tarih">Tarih:</label>
+        <input type="date" id="tarih">
+    </div>*@
+
+<div class="pagination">
+    <button id="onceki" onclick="location.href='@Url.Action("Index",new { hallId = ViewBag.HallId, sayfa = ViewBag.sayfa - 1 })'" style="@(ViewBag.sayfa < 1 ? "visibility: hidden;": "visibility: visible;")">&lt;</button>
+    <div class="tarih-kutulari">
+        @foreach (var item in ViewBag.tarihler)
+        {
+            @Html.Raw(item)
+        }
+    </div>
+    <button id="ileri" onclick="location.href='@Url.Action("Index",new { hallId = ViewBag.HallId, sayfa = ViewBag.sayfa + 1 })'">&gt;</button>
+</div>
+
+
+<select class="form-select" id="saat">
+    @*<option selected>Saati Seçiniz</option>*@
+    @foreach (var item in ViewBag.saatler)
+    {
+        if (item == ViewBag.saatler[0])
+        {
+            <option startTime="@item" endTime="@item.AddHours(3)" selected>@item - @item.AddHours(3)</option>
+        }
+        else
+        {
+            <option>@item - @item.AddHours(3)</option>
+        }
+
+    }
+</select>
+@await Html.PartialAsync("_Popup", TempData["model"])
+
+
+
+@*<div>
+        <label>Boş koltuklar:</label>
+        <div id="boxDivYellow"></div>
+    </div>
+
+    <div>
+        <label>Dolu koltuklar:</label>
+        <div id="boxDivGray"></div>
+    </div>*@
+
+<br />
+<div class="column-desk" id="@ViewBag.HallId">
+    @foreach (var desk in Model)
+    {
+
+        <div class="column-seat">
+            <div id="@desk.Id" class="deskDiv rowDiv">@desk.DeskNo</div>
+            @foreach (var seat in desk.Seats)
+            {
+                <div class="seat-div" id="@seat.Id" style="@(seat.IsReserved ? " pointer-events:none " : "")">
+                    <i class="fa-solid fa-chair @(seat.IsReserved ? "seat-red" : "seat-blue")"></i>
+                </div>
+            }
+        </div>
+
+    }
+</div>
+
+
+
+@section Scripts {
+    <script src="~/js/index.js"></script>
+}

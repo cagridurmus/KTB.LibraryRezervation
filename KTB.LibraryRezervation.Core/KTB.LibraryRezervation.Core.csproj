@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Repositories\" />
+    <None Remove="Services\" />
+    <None Remove="UnitOfWorks\" />
+    <None Remove="DTOs\" />
+    <None Remove="DTOs\Desk\" />
+    <None Remove="DTOs\Login\" />
+    <None Remove="DTOs\Register\" />
+    <None Remove="DTOs\LibraryHall\" />
+    <None Remove="DTOs\Reservation\" />
+    <None Remove="DTOs\Seat\" />
+    <None Remove="Hubs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="UnitOfWorks\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\Desk\" />
+    <Folder Include="DTOs\Login\" />
+    <Folder Include="DTOs\Register\" />
+    <Folder Include="DTOs\LibraryHall\" />
+    <Folder Include="DTOs\Reservation\" />
+    <Folder Include="DTOs\Seat\" />
+    <Folder Include="Hubs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
+  </ItemGroup>
+</Project>

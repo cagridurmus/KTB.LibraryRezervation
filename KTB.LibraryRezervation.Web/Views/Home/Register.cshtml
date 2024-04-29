@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Kayıt Ol";
+    Layout = "_LoginLayout";
+}
+@model RegisterUserDto
+
+<div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="pills-register">
+    <form>
+
+        <!-- Name input -->
+        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+            <input type="text" id="registerName" class="form-control">
+            <label class="form-label" for="registerName" style="margin-left: 0px;">Name</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 42.4px;"></div><div class="form-notch-trailing"></div></div>
+        </div>
+
+        <!-- Username input -->
+        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+            <input type="text" id="registerUsername" class="form-control">
+            <label class="form-label" for="registerUsername" style="margin-left: 0px;">Username</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 66.4px;"></div><div class="form-notch-trailing"></div></div>
+        </div>
+
+        <!-- Email input -->
+        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+            <input type="email" id="registerEmail" class="form-control">
+            <label class="form-label" for="registerEmail" style="margin-left: 0px;">Email</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 40px;"></div><div class="form-notch-trailing"></div></div>
+        </div>
+
+        <!-- Password input -->
+        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+            <input type="password" id="registerPassword" class="form-control">
+            <label class="form-label" for="registerPassword" style="margin-left: 0px;">Password</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64.8px;"></div><div class="form-notch-trailing"></div></div>
+        </div>
+
+        <!-- Repeat Password input -->
+        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+            <input type="password" id="registerRepeatPassword" class="form-control">
+            <label class="form-label" for="registerRepeatPassword" style="margin-left: 0px;">Repeat password</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 106.4px;"></div><div class="form-notch-trailing"></div></div>
+        </div>
+
+
+        <!-- Submit button -->
+        <button type="submit" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-primary btn-block mb-3" data-mdb-button-initialized="true">Sign in</button>
+    </form>
+</div>

@@ -1,0 +1,285 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Web/KTB.LibraryRezervation.Web.csproj": {}
+  },
+  "projects": {
+    "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Core/KTB.LibraryRezervation.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Core/KTB.LibraryRezervation.Core.csproj",
+        "projectName": "KTB.LibraryRezervation.Core",
+        "projectPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Core/KTB.LibraryRezervation.Core.csproj",
+        "packagesPath": "/Users/cagridurmus/.nuget/packages/",
+        "outputPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cagridurmus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/KTB.LibraryRezervation.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/KTB.LibraryRezervation.Repositories.csproj",
+        "projectName": "KTB.LibraryRezervation.Repositories",
+        "projectPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/KTB.LibraryRezervation.Repositories.csproj",
+        "packagesPath": "/Users/cagridurmus/.nuget/packages/",
+        "outputPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cagridurmus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Core/KTB.LibraryRezervation.Core.csproj": {
+                "projectPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Core/KTB.LibraryRezervation.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/KTB.LibraryRezervation.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/KTB.LibraryRezervation.Services.csproj",
+        "projectName": "KTB.LibraryRezervation.Services",
+        "projectPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/KTB.LibraryRezervation.Services.csproj",
+        "packagesPath": "/Users/cagridurmus/.nuget/packages/",
+        "outputPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cagridurmus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/KTB.LibraryRezervation.Repositories.csproj": {
+                "projectPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Repositories/KTB.LibraryRezervation.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Web/KTB.LibraryRezervation.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Web/KTB.LibraryRezervation.Web.csproj",
+        "projectName": "KTB.LibraryRezervation.Web",
+        "projectPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Web/KTB.LibraryRezervation.Web.csproj",
+        "packagesPath": "/Users/cagridurmus/.nuget/packages/",
+        "outputPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cagridurmus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/KTB.LibraryRezervation.Services.csproj": {
+                "projectPath": "/Users/cagridurmus/Projects/KTB.LibraryRezervation/KTB.LibraryRezervation.Services/KTB.LibraryRezervation.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

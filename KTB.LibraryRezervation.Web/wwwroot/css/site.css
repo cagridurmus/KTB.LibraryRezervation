@@ -1,0 +1,125 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.container-layout{
+    padding: 0 50px 0 50px;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.main-layout{
+    padding-left: 60px;
+}
+
+
+.column-desk {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-seat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+
+.rowDiv {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deskDiv {
+    width: 240px;
+    height: 50px;
+    margin: 10px;
+    background-color: gray;
+    text-align: center;
+}
+
+
+.seat-red {
+    font-size: 48px;
+    margin: 5px;
+    color: red;
+}
+
+.seat-blue {
+    font-size: 48px;
+    margin: 5px;
+    color: aqua;
+}
+
+
+.boxDivActive {
+    width: 240px;
+    height: 50px;
+    background-color: gray;
+    text-align: center;
+}
+
+/*.tarih-secimi, .saat-secimi {
+    margin-bottom: 10px;
+}*/
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarih-kutulari {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarih-kutusu {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 5px;
+}
+    .tarih-kutusu.active {
+        background: #0d6efd;
+    }
+
+    /*.tarih-kutusu:hover {
+        background: #0d6efd;
+    }*/
+
+    .tarih-kutusu span {
+        display: block;
+    }
+
+
+button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/*#saat {
+    width: 150px;
+}*/
