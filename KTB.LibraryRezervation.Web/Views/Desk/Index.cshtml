@@ -3,10 +3,6 @@
 
 }
 @model List<GetDeskDto>
-@*<div class="tarih-secimi">
-        <label for="tarih">Tarih:</label>
-        <input type="date" id="tarih">
-    </div>*@
 
 <div class="pagination">
     <button id="onceki" onclick="location.href='@Url.Action("Index",new { hallId = ViewBag.HallId, sayfa = ViewBag.sayfa - 1 })'" style="@(ViewBag.sayfa < 1 ? "visibility: hidden;": "visibility: visible;")">&lt;</button>
@@ -20,13 +16,13 @@
 </div>
 
 
-<select class="form-select" id="saat">
-    @*<option selected>Saati Seçiniz</option>*@
+<select class="form-select" onchange="selectOption(this.options[this.selectedIndex])" id="saat">
+
     @foreach (var item in ViewBag.saatler)
     {
-        if (item == ViewBag.saatler[0])
+        if(item == ViewBag.startTime)
         {
-            <option startTime="@item" endTime="@item.AddHours(3)" selected>@item - @item.AddHours(3)</option>
+            <option startTime="@item" endTime="@item.AddHours(3)" selected>@item- @item.AddHours(3)</option>
         }
         else
         {
@@ -39,15 +35,6 @@
 
 
 
-@*<div>
-        <label>Boş koltuklar:</label>
-        <div id="boxDivYellow"></div>
-    </div>
-
-    <div>
-        <label>Dolu koltuklar:</label>
-        <div id="boxDivGray"></div>
-    </div>*@
 
 <br />
 <div class="column-desk" id="@ViewBag.HallId">
@@ -71,4 +58,13 @@
 
 @section Scripts {
     <script src="~/js/index.js"></script>
+    <script>
+        function selectOption(deger) {
+            const dateInMilliseconds = Date.parse(deger.getAttribute("startTime"));
+
+            const dateObject = new Date(dateInMilliseconds).addHours(3).toUTCString();
+            console.log(dateObject);
+            window.location.href = '/Desk/Index?hallId=' + @ViewBag.HallId + '&startTime=' + dateObject + '&sayfa=' + @ViewBag.sayfa;
+        }
+    </script>
 }

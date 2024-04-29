@@ -19,7 +19,6 @@ namespace KTB.LibraryRezervation.Web.Controllers
         {
             _deskService = deskService;
         }
-
         public async Task<IActionResult> Index(int hallId, DateTime startTime, DateTime endTime, int sayfa)
         {
             var tarih = DateTime.Today;
@@ -31,9 +30,22 @@ namespace KTB.LibraryRezervation.Web.Controllers
             var tarihler = GösterilenTarihleriOluştur(sayfa, hallId, tarih);
             ViewBag.tarihler = tarihler;
             var saatler = SecilenTarihiOluştur(tarih.AddDays(sayfa));
+            var time = DateTime.Now;
+           if(startTime == DateTime.MinValue)
+            {
+                time = saatler[0];
+                ViewBag.startTime = saatler[0];
+            }
+            else
+            {
+                time = startTime;
+                ViewBag.startTime = startTime;
+            }
+            
+
             ViewBag.saatler = saatler;
             ViewBag.HallId = hallId;
-            var desks = await _deskService.GetDeskWithHallIdAsync(hallId, saatler[0], saatler[1]);
+            var desks = await _deskService.GetDeskWithHallIdAsync(hallId, time, time.AddHours(3));
             return View(desks);
         }
 
@@ -45,14 +57,11 @@ namespace KTB.LibraryRezervation.Web.Controllers
 
         public static string[] GetDatetimeInDesk(int sayfa, DateTime baslangicTarihi)
         {
-            //int baslangicIndeksi = (sayfa);
-            //int bitisIndeksi = baslangicIndeksi + 7;
             
             string[] tarihler = new string[7];
             for (int i = 0; i < 7; i++)
             {
                 var tarih = baslangicTarihi.AddDays(i).ToString("dd MMMMM yyyy", new CultureInfo("tr-TR"));
-                //var tarihStr = DateTime.Parse(tarih);
                 tarihler[i] = tarih;
             }
 
@@ -70,9 +79,9 @@ namespace KTB.LibraryRezervation.Web.Controllers
                 var tarih = baslangicTarihi.AddDays(i);
                 if(tarih.DayOfWeek != DayOfWeek.Monday)
                 {
-                var tarihStr = tarih.ToString("d MMMMM yyyy", new CultureInfo("tr-TR"));
-                gosterilenTarihler[i - baslangicIndeksi] = $"<div onclick=\"location.href='/Desk/Index?hallId={hallId}&sayfa={i}'\" value=\"{tarih}\" class=\"tarih-kutusu {(i == baslangicIndeksi ? "active" : "")} \" id=\"kutu\"><span>&nbsp;{tarihStr}</span></div>";
-            }
+                    var tarihStr = tarih.ToString("d MMMMM yyyy", new CultureInfo("tr-TR"));
+                    gosterilenTarihler[i - baslangicIndeksi] = $"<div onclick=\"location.href='/Desk/Index?hallId={hallId}&sayfa={i}'\" value=\"{tarih}\" class=\"tarih-kutusu {(i == baslangicIndeksi ? "active" : "")} \" id=\"kutu\"><span>&nbsp;{tarihStr}</span></div>";
+                }
             }
 
             return gosterilenTarihler;
@@ -80,9 +89,7 @@ namespace KTB.LibraryRezervation.Web.Controllers
 
         public static List<DateTime> SecilenTarihiOluştur(DateTime time)
         {
-            //DateTime[] gosterilenSaatler = new DateTime[3];
             var gosterilenSaatler = new List<DateTime>();
-            //int saat = 0;
             for (int i = 9; i < 18; i+=3)
             {
                 
@@ -91,8 +98,6 @@ namespace KTB.LibraryRezervation.Web.Controllers
                 {
                     gosterilenSaatler.Add(newTime);
                 }
-                //gosterilenSaatler[saat] += $"<option startTime=\"{newTime}\" endTime=\"${newTime.AddHours(3)}\">{newTime} - {newTime.AddHours(3)}</option>";
-                //gosterilenSaatler.Add(newTime);
             }
 
             return gosterilenSaatler;
