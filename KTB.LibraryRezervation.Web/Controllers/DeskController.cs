@@ -68,8 +68,11 @@ namespace KTB.LibraryRezervation.Web.Controllers
             for (int i = baslangicIndeksi; i < bitisIndeksi; i++)
             {
                 var tarih = baslangicTarihi.AddDays(i);
+                if(tarih.DayOfWeek != DayOfWeek.Monday)
+                {
                 var tarihStr = tarih.ToString("d MMMMM yyyy", new CultureInfo("tr-TR"));
                 gosterilenTarihler[i - baslangicIndeksi] = $"<div onclick=\"location.href='/Desk/Index?hallId={hallId}&sayfa={i}'\" value=\"{tarih}\" class=\"tarih-kutusu {(i == baslangicIndeksi ? "active" : "")} \" id=\"kutu\"><span>&nbsp;{tarihStr}</span></div>";
+            }
             }
 
             return gosterilenTarihler;
