@@ -25,8 +25,8 @@
 
 @section Scripts{
     <script>
-        var email = localStorage.getItem("email");
-        if ((email == null || email == '') && "@Html.Raw(TempData["email"])" != email) {
+        var tempData = "@Html.Raw(TempData["email"])";
+        if (tempData != '') {
             localStorage.setItem("email", "@Html.Raw(TempData["email"])");
         }
 
