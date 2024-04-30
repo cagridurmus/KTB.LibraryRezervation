@@ -26,7 +26,7 @@ namespace KTB.LibraryRezervation.API.Controllers
         public async Task<IActionResult> AddRezervation(AddReservationDto dto)
         {
             var isCreated = await _service.CreateReservation(dto);
-            return CreatedActionResult(CustomResponseDto<bool>.Success(201, isCreated));
+            return CreatedActionResult(CustomResponseDto<NoContentDto>.Success(201));
         }
 
         [HttpGet("{email}")]

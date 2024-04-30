@@ -1,4 +1,4 @@
-﻿using System.Net.Http.Json;
+﻿using System.Security.Claims;
 using KTB.LibraryRezervation.Core.DTOs;
 using KTB.LibraryRezervation.Core.DTOs.Reservation;
 
@@ -15,7 +15,7 @@ namespace KTB.LibraryRezervation.Web.Services
             var url = $"{BaseUrl}/api/reservation";
             var response = await HttpClient.PostAsJsonAsync(url, reservation);
             
-            var responseBody = await response.Content.ReadFromJsonAsync<CustomResponseDto<string>>();
+            var responseBody = await response.Content.ReadFromJsonAsync<CustomResponseDto<NoContentDto>>();
             if (!response.IsSuccessStatusCode) return responseBody.Errors.First();
 
             return "Başarıyla rezervasyonunuz eklendi";
