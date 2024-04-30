@@ -61,14 +61,18 @@ connection.start()
         console.error(error);
     });
 
-connection.on("SeatRezerv", function (hallId, seatId, message) {
-    const url = window.location.search;
-    const params = new URLSearchParams(url);
+connection.on("SeatRezerv", function (email, hallId, seatId, message) {
+    if (email != localStorage.getItem('email')) {
+        const url = window.location.search;
+        const params = new URLSearchParams(url);
 
-    const hallId1 = params.get('hallId');
+        const hallId1 = params.get('hallId');
 
-    alert(`${hallId1} numaralı salonda ${seatId} ${message}`);
+        alert(`${hallId1} numaralı salonda ${seatId} ${message}`);
+        
+    }
     var i = $(`#${seatId}.seat-div i`);
     i.removeClass('seat-blue');
     i.addClass('seat-red');
+    
 });
